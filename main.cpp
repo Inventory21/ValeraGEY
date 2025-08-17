@@ -1,17 +1,16 @@
 #include <iostream>
 #include <cmath>
+#include <iomanip>
 
 int main() {
-double s = 0.0;
-    double p, h;
-    std::cout << "what is p: ";
-    std::cin >> p;
-    std::cout << "what is h: ";
-    std::cin >> h;
-    for (int i = 0; i < 10; ++i) {
-        double term = p + i * h;
-        s += term * term;
-  }
-    std::cout << "REZULTAT :" << s << std::endl;
+    double x, y;
+
+    std::cout << "   x      |    y(x)" << std::endl;
+    std::cout << "------------------------" << std::endl;
+
+    for (x = -4.0; x <= 4.0; x += 0.5) {
+        y = 0.5 * x * x - 7 * x;
+        std::cout << std::fixed << std::setprecision(1) << std::setw(7) << x << " | " << std::setw(7) << y << std::endl;
+    }
 return 0;
 }
