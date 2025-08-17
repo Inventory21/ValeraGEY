@@ -2,11 +2,12 @@
 #include <cmath>
 
 int main() {
-    int s = 0, i;
-    for (i = 2; i <= 35; i = i + 3){
-    s = s + i; 
+ double s = 0.0;
+    int i;
+    for (i = 1; i <= 56; ++i) {
+        s += (2.0 * i) / (2.0 * i + 1);
     }
- 
+
     std::cout << "s = " << s << std::endl;
 
 return 0;
