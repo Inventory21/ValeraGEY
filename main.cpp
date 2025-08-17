@@ -2,20 +2,13 @@
 #include <cmath>
 #include <iomanip>
 
-int factorial(int n) {
-    int result = 1;
-    for (int i = 1; i <= n; ++i) {
-        result *= i;
-    }
-    return result;
-}
-
 int main() {
-    double s = 0.0;
-    for (int n = 1; n <= 6; ++n) {
-        double term = (pow(-1, n) * pow(5, n)) / factorial(n);
-        s += term;
+    int base = 3;
+    int exponent = 7;
+    int result = 1; 
+    for (int i = 1; i <= exponent; ++i) {
+        result *= base;
     }
-    std::cout << "S is: " << s << std::endl;
+    std::cout << "3 in 7-s exponent: " << result << std::endl;
 return 0;
 }
