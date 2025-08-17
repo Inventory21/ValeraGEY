@@ -11,11 +11,11 @@ int factorial(int n) {
 }
 
 int main() {
-    int s = 0;
-    for (int i = 1; i <= 6; ++i) {
-        s += factorial(i);
-
-    std::cout << "Farcorials 1 to 6 : " << s << std::endl;
+    double s = 0.0;
+    for (int n = 1; n <= 6; ++n) {
+        double term = (pow(-1, n) * pow(5, n)) / factorial(n);
+        s += term;
     }
+    std::cout << "S is: " << s << std::endl;
 return 0;
 }
