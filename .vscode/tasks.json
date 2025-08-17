@@ -1,0 +1,21 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "build",
+            "type": "shell",
+            "command": "g++",  // Убедитесь, что путь к компилятору правильный
+            "args": [
+                "-g",  // Включение отладочной информации
+                "${workspaceFolder}/main.cpp",  // Укажите путь к вашему исходному файлу
+                "-o", "${workspaceFolder}/main.exe"  // Указываем имя и путь к выходному исполнимому файлу
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "problemMatcher": ["$gcc"],
+            "detail": "Компиляция C++ кода"
+        }
+    ]
+}
