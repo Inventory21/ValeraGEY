@@ -3,12 +3,15 @@
 #include <iomanip>
 
 int main() {
-    int base = 3;
-    int exponent = 7;
-    int result = 1; 
-    for (int i = 1; i <= exponent; ++i) {
-        result *= base;
+    std::cout << "A): ";
+    for (int i = 1; i <= 6; ++i) {
+        std::cout << i << " ";
     }
-    std::cout << "3 in 7-s exponent: " << result << std::endl;
+    std::cout << std::endl;
+    std::cout << "B): ";
+    for (int i = 1; i <= 6; ++i) {
+        std::cout << "5 ";
+    }
+    std::cout << std::endl;
 return 0;
 }
