@@ -3,15 +3,14 @@
 #include <iomanip>
 
 int main() {
-    std::cout << "A): ";
-    for (int i = 1; i <= 6; ++i) {
-        std::cout << i << " ";
+    double x, s = 0.0;
+
+    std::cout << "what is x: ";
+    std::cin >> x;
+
+    for (int i = 0; i <= 10; ++i) {
+        s += 1 / pow(x, i);
     }
-    std::cout << std::endl;
-    std::cout << "B): ";
-    for (int i = 1; i <= 6; ++i) {
-        std::cout << "5 ";
-    }
-    std::cout << std::endl;
+    std::cout << "s: " << s << std::endl;
 return 0;
 }
