@@ -2,9 +2,9 @@
 #include <cmath>
 
 int main() {
-    double s = 0.0;
-    for (int i = 1; i <= 10; ++i){
-    s += 1.0 / i; 
+    int s = 0, i;
+    for (i = 2; i <= 35; i = i + 3){
+    s = s + i; 
     }
  
     std::cout << "s = " << s << std::endl;
