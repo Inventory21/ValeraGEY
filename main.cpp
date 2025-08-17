@@ -3,15 +3,15 @@
 
 int main() {
 double s = 0.0;
-    double x;
-
-    std::cout << "What is X :";
-    std::cin >> x;
-
-    for (int i = 1; i <= 9; ++i) {
-        s += cos(i * x) / pow(x, i - 1);
-    }
-
-    std::cout << "s = " << s << std::endl;
+    double p, h;
+    std::cout << "what is p: ";
+    std::cin >> p;
+    std::cout << "what is h: ";
+    std::cin >> h;
+    for (int i = 0; i < 10; ++i) {
+        double term = p + i * h;
+        s += term * term;
+  }
+    std::cout << "REZULTAT :" << s << std::endl;
 return 0;
 }
