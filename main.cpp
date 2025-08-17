@@ -2,15 +2,22 @@
 #include <cmath>
 #include <iomanip>
 
+
 int main() {
-    double x, s = 0.0;
+    double x, y;
+    std::cout << " X    |    Y" << std::endl;
+    std::cout << "-------------------" << std::endl;
 
-    std::cout << "what is x: ";
-    std::cin >> x;
+    for (x = -2.0; x <= 2.0; x += 0.5) {
+        if (x <= -1) {
+            y = 1;
+        } else if (x <= 1) {
+            y = -x;
+        } else {
+            y = -1;
+        }
 
-    for (int i = 0; i <= 10; ++i) {
-        s += 1 / pow(x, i);
+        std::cout << std::fixed << std::setprecision(2) << std::setw(6) << x << " | " << std::setw(6) << y << std::endl;
     }
-    std::cout << "s: " << s << std::endl;
 return 0;
 }
